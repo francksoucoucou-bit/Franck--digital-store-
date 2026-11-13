@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FRANCK DIGITAL STORE — ebooks, guides, PDF et ressources numériques.">
+  <title>FRANCK DIGITAL STORE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#"><span class="brand-mark">FD</span><span>FRANCK <b>DIGITAL STORE</b></span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">☰</button>
+  <nav id="mainNav">
+    <a href="#accueil">Accueil</a><a href="#boutique">Boutique</a><a href="#apropos">À propos</a><a href="#contact">Contact</a>
+  </nav>
+  <button class="cart-button" id="openCart">Panier <span id="cartCount">0</span></button>
+</header>
+
+<main>
+<section class="hero" id="accueil">
+  <div class="hero-copy">
+    <p class="eyebrow">VOTRE BOUTIQUE DE PRODUITS NUMÉRIQUES</p>
+    <h1>Apprenez, créez et avancez <em>à votre rythme.</em></h1>
+    <p>Découvrez des ebooks, guides pratiques, formations et ressources numériques conçus pour vous aider à progresser.</p>
+    <a class="primary-btn" href="#boutique">Découvrir la boutique <span>→</span></a>
+    <div class="trust-line"><span>✓ Produits 100 % numériques</span><span>✓ Accès après achat</span></div>
+  </div>
+  <div class="hero-art" aria-label="Illustration de produits numériques">
+    <div class="glow"></div><div class="device laptop"><div class="screen"><span>FD</span><small>LE SAVOIR À PORTÉE DE CLIC</small></div></div>
+    <div class="book book-one"><b>GUIDE</b><strong>NUMÉRIQUE</strong><small>APPRENDRE • PRATIQUER • RÉUSSIR</small></div>
+    <div class="book book-two"><b>PDF</b><strong>PRO</strong></div>
+    <div class="gold-orbit"></div>
+  </div>
+</section>
+
+<section class="benefits">
+  <div><span>✦</span><b>Ressources pratiques</b><small>Des contenus utiles et accessibles</small></div>
+  <div><span>⬇</span><b>Téléchargement</b><small>Accédez à vos achats en ligne</small></div>
+  <div><span>◎</span><b>Assistance</b><small>Un accompagnement à votre écoute</small></div>
+</section>
+
+<section class="shop section" id="boutique">
+  <div class="section-heading"><div><p class="eyebrow">NOTRE SÉLECTION</p><h2>Explorez la boutique</h2><p>Des ressources numériques pour développer vos compétences.</p></div>
+    <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Rechercher un produit..."></label>
+  </div>
+  <div class="filters" id="filters">
+    <button class="filter active" data-category="Tous">Tous</button>
+    <button class="filter" data-category="Ebooks">Ebooks</button>
+    <button class="filter" data-category="Informatique">Informatique</button>
+    <button class="filter" data-category="Prompts IA">Prompts IA</button>
+    <button class="filter" data-category="Formations">Formations</button>
+  </div>
+  <div class="product-grid" id="productGrid"></div>
+</section>
+
+<section class="about section" id="apropos">
+  <div class="about-badge">FD</div><div><p class="eyebrow">QUI SOMMES-NOUS ?</p><h2>Le numérique, plus simple et plus accessible.</h2><p>FRANCK DIGITAL STORE rassemble des ressources numériques pratiques pour apprendre, gagner du temps et développer de nouvelles compétences.</p></div>
+</section>
+
+<section class="contact section" id="contact">
+  <p class="eyebrow">BESOIN D'INFORMATIONS ?</p><h2>Nous sommes à votre écoute.</h2>
+  <p>Pour une question sur un produit ou une commande, contactez notre équipe.</p>
+  <a class="primary-btn" href="https://wa.me/2290156679362" target="_blank" rel="noreferrer">Nous contacter sur WhatsApp</a>
+  <small>Contact WhatsApp : +229 01 56 67 93 62</small>
+</section>
+</main>
+
+<footer><a class="brand" href="#"><span class="brand-mark">FD</span><span>FRANCK <b>DIGITAL STORE</b></span></a><p>© <span id="year"></span> FRANCK DIGITAL STORE. Tous droits réservés.</p></footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Votre panier">
+  <div class="drawer-head"><h2>Votre panier</h2><button id="closeCart" aria-label="Fermer">✕</button></div>
+  <div id="cartItems" class="cart-items"><p class="empty">Votre panier est vide pour le moment.</p></div>
+  <div class="cart-total"><span>Total</span><b id="cartTotal">0 FCFA</b></div>
+  <button class="primary-btn checkout" id="checkoutBtn">Continuer vers le paiement</button>
+  <p class="demo-note">Démo : aucun paiement réel n'est effectué à cette étape.</p>
+</aside>
+<div class="modal" id="noticeModal" role="dialog" aria-modal="true">
+  <button class="modal-close" id="closeNotice">✕</button><p class="eyebrow">PROCHAINE ÉTAPE</p><h2>Paiement en préparation</h2>
+  <p>La boutique est actuellement en version de démonstration. Nous connecterons les paiements Mobile Money et cartes bancaires après la configuration du compte marchand.</p>
+</div>
+<script src="app.js"></script>
+</body></html>
